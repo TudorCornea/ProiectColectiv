@@ -26,4 +26,5 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-
+    fos_rest.serializer: '@App\Serializer\CamelCaseSerializer'
+    FOS\RestBundle\Serializer\Serializer: '@fos_rest.serializer.jms'
